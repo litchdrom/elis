@@ -26,7 +26,7 @@ r = redis.Redis(connection_pool=pool,charset="utf-8")
 
 i=1
 manager = Manager(
-    host=os.getenv('AMI_HOST', '95.161.104.2'),
+    host=os.getenv('AMI_HOST', '192.168.104.2'),
     port=os.getenv('AMI_PORT', 5038),
     username=os.getenv('AMI_USERNAME', 'starside'),
     secret=os.getenv('AMI_SECRET', 'r7qyHX34JGxSogdbmnNMtPTl0w'),
